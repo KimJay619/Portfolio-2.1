@@ -1,8 +1,10 @@
 import ReviewList from './ReviewList';
 import useFetch from './useFetch';
 import './ReviewList.css'
-const ViewReview =()=>{
-    const {data:Review, isPending, error} = useFetch("http://localhost:8000/Review");
+import axios from 'axios';
+
+const ViewReview = async ()=>{
+    const {data:Review, isPending, error} = await axios.useFetch("http://localhost:8000/Review");
  
     const title="Review List"
     const description ="You can view the Review List Here:"
