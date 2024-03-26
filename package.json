@@ -1,5 +1,5 @@
 { 
-  "homepage": "http://KimJay619.github.io/Portfolio-2.1",
+  "homepage": "http://KimJay619.github.io/Portfolio-2.1/src/Home.js",
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
@@ -17,7 +17,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start json-server --watch data/db.json --port 8000",
+    "start": "react-scripts start npx json-server --watch data/db.json --port 8000",
     "predeploy":"npm run build",
     "deploy": "gh-pages -d build",
     "build": "react-scripts build",
