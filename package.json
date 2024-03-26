@@ -3,6 +3,7 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
+  "proxy": "http://localhost:8000/Review",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
@@ -16,7 +17,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "react-scripts start json-server --watch data/db.json --port 8000",
     "predeploy":"npm run build",
     "deploy": "gh-pages -d build",
     "build": "react-scripts build",
